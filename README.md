@@ -20,6 +20,11 @@ ChangeColorTab is a simple tablayout extends LinearLayout , Host For ChangeColor
 ChangeColorItem is a custom View which can change it's color when you scroll ViewPager.
 
 ## 使用
+
+####Gradle添加依赖
+
+     compile 'com.xdu.xhin:library:0.1.0'
+
 ####在layout中加入ChangeColorTab和ChangeColorItem
 
     <android.support.v4.view.ViewPager
