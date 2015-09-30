@@ -88,8 +88,8 @@ ChangeColorItem is a custom View which can change it's color when you scroll Vie
     changeColorTab.setViewpager(mViewPager);
 
 ## 反馈与建议
-####这是我第一次发布控件库,肯定有很多不完善的地方,如果大家有什么意见,可以给我PR也可以给我邮件,THX!
-####如果大家喜欢,可以给我星星吗?
+这是我第一次发布控件库,肯定有很多不完善的地方,如果大家有什么意见,可以给我PR也可以给我邮件,THX!
+如果大家喜欢,可以给我星星吗?
 - 邮箱：<xhinliang@gmail.com>
 - 
 ####YOU LOOK SO HANDSOME WHEN YOU CLICK THE "STAR" BOTTON.
