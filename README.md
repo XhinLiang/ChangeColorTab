@@ -22,7 +22,7 @@ ChangeColorItem is a custom View which can change it's color when you scroll Vie
 ## 使用
 ####在layout中加入ChangeColorTab和ChangeColorItem
 
-       <android.support.v4.view.ViewPager
+    <android.support.v4.view.ViewPager
         android:id="@+id/id_viewpager"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -79,8 +79,8 @@ ChangeColorItem is a custom View which can change it's color when you scroll Vie
    
 
     mViewPager = (ViewPager) findViewById(R.id.id_viewpager);
-        changeColorTab = (ChangeColorTab) findViewById(R.id.change_color_tab);
-        changeColorTab.setViewpager(mViewPager);
+    changeColorTab = (ChangeColorTab) findViewById(R.id.change_color_tab);
+    changeColorTab.setViewpager(mViewPager);
 
 ## 反馈与建议
 - 邮箱：<xhinliang@gmail.com>
