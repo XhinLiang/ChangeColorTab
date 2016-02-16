@@ -1,33 +1,23 @@
 # ChangeColorTab
 
+- **ChangeColorTab** is a simple **TabLayout** extends **LinearLayout** , Host For **ChangeColorItem**.
+- **ChangeColorItem** is a custom **View** which can change color when you scroll **ViewPager**.
 
+## Sample
 ![Alt text](./sample.gif)
 
+## Usage
 
-给老师做一个项目,给他推荐使用Material Design,结果老师不同意,坚持要仿微信的风格,所以我就产生了要写一个库的想法.
-请不要鄙视这个库,因为肯定有不少人无法接受Material Design而更倾向于使用"用户已经习惯"的风格,姑且认为是我自己的一次练习吧!
-很庆幸有Hongyang的博文和代码,花了一个下午的时间大概把这个自定义View写好,事实上这也是我第一次写自定义View.
-基本功能已经大概成型了,后期如果有什么Bug或者好的想法会往里面加,现在使用起来已经足够简洁足够方便了.
+#### Import in Gradle
 
-**这个库有几乎一半的代码出自Hongyang之手**
-非常感谢鸿洋 ,有很多的东西都是看他的博客学会的.
-这里贴出来原博客地址:
-http://blog.csdn.net/lmj623565791/article/details/41087219
+```
+compile 'com.xdu.xhin:library:0.1.0'
+```
 
+#### layout
 
-
-ChangeColorTab is a simple tablayout extends LinearLayout , Host For ChangeColorItem.
-ChangeColorItem is a custom View which can change it's color when you scroll ViewPager.
-
-## 使用
-
-####Gradle添加依赖
-
-     compile 'com.xdu.xhin:library:0.1.0'
-
-####在layout中加入ChangeColorTab和ChangeColorItem
-
-    <android.support.v4.view.ViewPager
+```
+ <android.support.v4.view.ViewPager
         android:id="@+id/id_viewpager"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -79,18 +69,21 @@ ChangeColorItem is a custom View which can change it's color when you scroll Vie
             tab:item_text="tab4"
             tab:item_text_size="12sp" />
     </com.xdu.xhin.library.view.ChangeColorTab>
+```
 
-####绑定ViewPager
+#### Bind to ViewPager
    
+```
+mViewPager = (ViewPager) findViewById(R.id.id_viewpager);
+changeColorTab = (ChangeColorTab) findViewById(R.id.change_color_tab);
+changeColorTab.setViewpager(mViewPager);
+```
 
-    mViewPager = (ViewPager) findViewById(R.id.id_viewpager);
-    changeColorTab = (ChangeColorTab) findViewById(R.id.change_color_tab);
-    changeColorTab.setViewpager(mViewPager);
+## Thanks
 
-## 反馈与建议
-这是我第一次发布控件库,肯定有很多不完善的地方,如果大家有什么意见,可以给我PR也可以给我邮件,THX!
-如果大家喜欢,可以给我星星吗?
-- 邮箱：<xhinliang@gmail.com>
-- 
-####YOU LOOK SO HANDSOME WHEN YOU CLICK THE "STAR" BOTTON.
+**[HongYang](http://blog.csdn.net/lmj623565791/article/details/41087219)**
+
+## Contact
+- **Email**：**<xhinliang@gmail.com>**
+
 
